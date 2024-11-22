@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee Blog</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Coffee blog</h1>git config --global user.name "gigigi435"
+        git config --global user.email "goalejandrogomas@yahoo.com"
+        <form>
+            <label for="name">Название напитка</label>
+            <input type="text" id="name" value="Американо">
+
+            <label for="coffee-type">Сорт кофе</label>
+            <select id="coffee-type">
+                <option>Арабика</option>
+                <option>Робуста</option>
+            </select>
+
+            <label>Крепость обжарки</label>
+            <div>
+                <input type="radio" id="strong" name="roast" value="Крепкая">
+                <label for="strong">Крепкая</label>
+                <input type="radio" id="medium" name="roast" value="Средняя">
+                <label for="medium">Средняя</label>
+                <input type="radio" id="light" name="roast" value="Легкая" checked>
+                <label for="light">Легкая</label>
+            </div>
+
+            <label for="price">Стоимость напитка</label>
+            <input type="number" id="price" value="150">
+
+            <label for="image">Изображение</label>
+            <input type="text" id="image" value="https://i.pinimg.com/originals/59/d2/97/59d2976fa966e46e6160a62af16c5adb.jpg">
+
+            <label for="description">Описание</label>
+            <textarea id="description">Какое утро без кофе???</textarea>
+
+            <button type="submit">Добавить напиток</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Изображение</th>
+                    <th>Название</th>
+                    <th>Сорт</th>
+                    <th>Крепость обжарки</th>
+                    <th>Стоимость</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://i.pinimg.com/originals/59/d2/97/59d2976fa966e46e6160a62af16c5adb.jpg" alt="Американо"></td>
+                    <td>Американо</td>
+                    <td>Арабика</td>
+                    <td>Легкая</td>
+                    <td>150</td>
+                    <td>Какое утро без кофе???</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
